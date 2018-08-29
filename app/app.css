@@ -1,0 +1,48 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.content {
+  padding: 20px;
+}
+
+table{
+  width:300px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  }
+  thead td{
+  background-color:#FFCB00;
+  text-align:center;
+  padding:15px;
+  }
+  tbody tr td {
+  text-align:center;
+  padding:15px;
+  }
+  tbody tr td:hover{
+  background-color:#FEFFED;
+  }
+

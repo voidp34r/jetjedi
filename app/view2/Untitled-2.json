@@ -1,0 +1,22 @@
+{
+  "root": {
+    "menu": {
+      "id": "file",
+      "menuitem": {
+        "element": [{
+            "onclick": "CreateNewDoc()",
+            "value": "create"
+          },
+          {
+            "onclick": "OpenDoc()",
+            "value": "open"
+          },
+          {
+            "onclick": "CloseDoc()",
+            "value": "close"
+          }
+        ]
+      }
+    }
+  }
+}

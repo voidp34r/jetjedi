@@ -1,0 +1,42 @@
+<div class="jumbotron-fluid">
+  <div class="card-header">
+    <button class="btn btn-default"> + Jedi </button>
+  </div>
+  <table class="table" style="text-align: center">
+    <tr >
+      <th>ID</th>
+      <th>Name</th>
+      <th>planet</th>
+      <th>Status</th>
+      <th>master</th>
+      <th>_____</th>
+    </tr>
+  </table>
+  <table ng-table="jedi" class="table" ng-repeat="user in jedi" show-filter="true">
+    <tr>
+        <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+            {{$index}}
+          </td>
+      <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+        {{user.name}}
+      </td>
+      <td title="'planet'" filter="{ planet: 'text'}" sortable="'planet'">
+        {{user.planet}}
+      </td>
+      <td title="'status'" filter="{ status: 'number'}" sortable="'status'">
+        {{user.$$hashKey
+        }}
+      </td>
+      <td title="'master'" filter="{ master: 'number'}" sortable="'master'">
+        {{user.master}}
+      </td>
+      <td>
+        <select class="custom-select">
+          <option value="1">editar</option>
+          <option value="2">S</option>
+          <option value="3">excluir</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</div>
